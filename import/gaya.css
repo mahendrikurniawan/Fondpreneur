@@ -1,0 +1,26 @@
+body{
+    background-color: #3f69a8;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+h1{
+    color: whitesmoke;
+}
+h3{
+    color: greenyellow;
+}
+table{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 15px;
+}
+.content-table{
+    margin: 0px;
+    
+}
+.tabel{
+    margin-left: 250px;
+    padding-top: 0;
+    height: 70px;
+}
+

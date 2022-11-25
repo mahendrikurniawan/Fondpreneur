@@ -1,0 +1,98 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Print Data Table</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.2/css/buttons.dataTables.min.css">
+    </head>
+    <body>
+        <table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Pesanan</th>
+                <th>Tanggal Pemesanan</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ilham Udin</td>
+                <td>ilhamudin43@gmail.com</td>
+                <td>Pembuatan Poster</td>
+                <td>2022-10-11</td>
+                <td>Rp 50.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Puan Maharani</td>
+                <td>puanjgndilawan@gmail.com</td>
+                <td>Pembuatan Banner</td>
+                <td>2022-11-03</td>
+                <td>Rp 45.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Arif muhammad</td>
+                <td>arifmhmmd11@gmail.com</td>
+                <td>Pembuatan Motion</td>
+                <td>2022-11-03</td>
+                <td>Rp 65.000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Andi setiawan</td>
+                <td>setiawanandi03@gmail.com</td>
+                <td>Pembuatan Feed IG</td>
+                <td>2022-11-08</td>
+                <td>Rp 70.000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Fanny Febrian</td>
+                <td>fannyfebrian12@gmail.com</td>
+                <td>Pemesanan Logo</td>
+                <td>2022-11-10</td>
+                <td>Rp 80.000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.print.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                dom: 'Bfrtip',
+                buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+            });
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

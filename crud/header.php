@@ -21,7 +21,7 @@
                 <a class="nav-link active" aria-current="page" href="index.php"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="prodi.php">s</a>
+                <a class="nav-link" href="prodi.php"></a>
                 </li>
             </ul>
             </div>

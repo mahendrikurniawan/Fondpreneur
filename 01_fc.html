@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript">
+        FusionCharts.ready(function () {
+            var revenueChart = new FusionCharts({
+                "type": "column2d",
+                "renderAt": "posisix",
+                "width": "500",
+                "height": "300",
+                "dataFormat": "json",
+                "dataSource": {
+                    "chart": {
+                        "caption": "Rating Pelanggan Pada Bulan November",
+                        "subCaption": "By FONDPRENEUR",
+                        "xaxisName": "nama_pelanggan",
+                        "yAxisName": "persentase rating",
+                        "theme": "fint"
+                    },
+                    "data": [{
+                            "label": "ilham udin",
+                            "value": "2"
+                        },
+                        {
+                            "label": "puan maharani",
+                            "value": "4"
+                        },
+                        {
+                            "label": "Arif muhammad",
+                            "value": "3"
+                        },
+                        {
+                            "label": "Andi setiawan",
+                            "value": "4"
+                        },
+                        {
+                            "label": "Fanny Febrian",
+                            "value": "5"
+                        },
+                        {
+                            "label": "Murfid isra bin malik",
+                            "value": "4"
+                        },
+                    ]
+                }
+            });
+            revenueChart.render();
+        })
+    </script>
+</head>
+
+<body>
+    <div id="posisix"></div>
+</body>
+
+</html>

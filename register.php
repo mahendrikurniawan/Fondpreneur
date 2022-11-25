@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
 
 if (isset($_SESSION['username'])) {
-    header("Location: index.php");
+	header("Location: login.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -35,7 +35,6 @@ if (isset($_POST['submit'])) {
 		} else {
 			echo "<script>alert('Woops! Email Already Exists.')</script>";
 		}
-
 	} else {
 		echo "<script>alert('Password Not Matched.')</script>";
 	}
@@ -45,6 +44,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,10 +55,11 @@ if (isset($_POST['submit'])) {
 
 	<title>Register Form </title>
 </head>
-<body  style="background-image:.jpg;">
+
+<body style=>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
 			<div class="input-group">
 				<input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
 			</div>
@@ -67,8 +68,8 @@ if (isset($_POST['submit'])) {
 			</div>
 			<div class="input-group">
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
-            </div>
-            <div class="input-group">
+			</div>
+			<div class="input-group">
 				<input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
 			</div>
 			<div class="input-group">
@@ -78,4 +79,5 @@ if (isset($_POST['submit'])) {
 		</form>
 	</div>
 </body>
+
 </html>
